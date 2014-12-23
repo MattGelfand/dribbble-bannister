@@ -110,18 +110,19 @@ NORMALIZE.css
 		width: 100%;
 		top: 0;
  		z-index: 2;
+ 		border-bottom: 1px solid rgba(0,0,0,.5);
 	}
 
 	.header-inner {
 		position: relative;
-		height: 40px;
+		height: 60px;
 		background: #fff;
  	}
 
 	.logo {
 		position: absolute;
 		left: 5%;
-		top: 20px;
+		top: 23.5px;
 	}
 
 	.toggle {
@@ -137,9 +138,9 @@ NORMALIZE.css
 		position: fixed;
 		top: -100%;
 		width: 100%;
-		height: 50%;
-		padding: 1.6em;
-		background: #222;
+		height: auto;
+		padding: 0;
+		background: rgb(34,130,34);
 		z-index: 0;
 
 		-webkit-transition: .15s ease-in;
@@ -148,7 +149,7 @@ NORMALIZE.css
 	}
 
 	.menu ul {
-		padding-top: 1.6em;
+		padding-top: 3.2em;
 		position: relative;
 	}
 
@@ -158,6 +159,17 @@ NORMALIZE.css
 		text-transform: uppercase;
 		letter-spacing: 2px;
  		text-align: center;
+ 		padding: 1.6em 0;
+ 		border-top: 1px solid black;
+ 		border-bottom: 1px solid white;
+ 	}
+
+ 	.menu li:hover {
+		background: rgba(255,255,255,.6);
+ 	}
+
+ 	.menu a {
+ 		color: rgb(252,246,85);
  	}
 	
 	#sidebartoggler {
@@ -182,26 +194,26 @@ NORMALIZE.css
 	
 	/* Hero */
 
-	.hero-img {
-		background: url('../img/hero.jpg') 0 0 no-repeat;
-		background-size: cover;
-		height: 500px;
-	}
+
 	
 	article.module.parallax {
-		height: 600px;
+		height: 200px;
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
 		background-size: cover;
+		margin-top: 57px;
 	}
 	
 	article.module.parallax-1 {
-		background-image: url("../img/hero.jpg");
+		background-image: url("../img/pest.jpg");
 	}
 
 	article.module.parallax h1 {
-		line-height: 600px;
+		line-height: 200px;
 		text-align: center;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 1.6em;
 	}
 	
 
@@ -212,15 +224,15 @@ NORMALIZE.css
 		position: relative;
 	}
 
-	a:hover:before {
+	.products a:hover:before {
 		content: '';
 		display: block;
-		background: rgba(255, 0, 0, .5);
+		background: url('../img/plus.png') 0 0 no-repeat;
 		width: 100%;
 		height: 350px;
 		position: absolute;
-		top: 0;
-		right: 0;
+		top: 30%;
+		left: 35%;
 	}
 
 
@@ -233,10 +245,6 @@ NORMALIZE.css
 
 	.caps {
 		text-transform: uppercase;
-	}
-
-	.burger-icon {
-		font-size: 20px;
 	}
 
 
@@ -291,6 +299,22 @@ NORMALIZE.css
 	.contain {
 		max-width: 620px;
 		margin: 0 auto;
+	}
+
+	/* Hero */
+
+	article.module.parallax {
+		height: 700px;
+ 		background-attachment: fixed;
+ 		background-size: cover;
+	}
+	
+	article.module.parallax-1 {
+		background-image: url("../img/pest-lrg.png");
+	}
+
+	article.module.parallax h1 {
+		line-height: 700px;		
 	}
 }
 	
