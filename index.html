@@ -5,7 +5,8 @@
 <title>bannister</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel='stylesheet' href='css/style.css'/>
-<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Averia+Sans+Libre:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,900italic,400' rel='stylesheet' type='text/css'>
 <!--remember to change favicon-->
 </head>
 <body>
@@ -23,7 +24,7 @@
 
 				 			<figure class="burger">
 				 				<label for="sidebartoggler" class="toggle">
-									<img src="img/burger.png" alt="">
+									<p>Menu</p>
 								</label>
 				 			</figure>
 			 			</div>
@@ -32,7 +33,11 @@
 					<section class="hero">
 						<article class="module parallax parallax-1">
 							<div class="parallax-container">
-								<h1>Serene</h1>
+								<h1 class="hero-header">Vamonos Pest</h1>
+								<div class="divider">—</div>
+								<h2 class="hero-subhead ital"><strong>"Don't Bother Us While We're Working"</strong></h2>
+								<h2 class="hero-subhead">Albequerque, NM 04920</h2>
+								<h2 class="hero-subhead"><a href="#" class="white-link">(482) 555-5555</a></h2>
 							</div>
 						</article>
 					</section><!--hero-->
@@ -40,45 +45,41 @@
 					<section class="products">
 						<ul>
 							<li>
-								<a href="#"><img src="http://placekitten.com/g/350/350" alt="" /></a>
 								<div class="product-info">
-									<h1>Header</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo laboriosam sit similique eaque dolore, praesentium rem, iste voluptas illum iure veniam. Cupiditate, nulla sint rerum, voluptates necessitatibus enim explicabo?</p>
+									<a href="#"><img src="img/bug.png" alt="" />
+										<h1 class="section-header">Bugs big and small</h1>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo laboriosam sit similique eaque dolore, praesentium rem, iste voluptas illum iure veniam. Cupiditate, nulla sint rerum, voluptates necessitatibus enim explicabo?</p>
+									</a>
+								</div>
+								
+							</li>
+							<li>
+								<div class="product-info">
+									<a href="#"><img src="img/spray.png" alt="" />
+										<h1 class="section-header">Environmentally friendly</h1>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo laboriosam sit similique eaque dolore, praesentium rem, iste voluptas illum iure veniam. Cupiditate, nulla sint rerum, voluptates necessitatibus enim explicabo?</p>
+									</a>
 								</div>
 							</li>
 							<li>
-								<a href="#"><img src="http://placekitten.com/g/350/350" alt="" /></a>
 								<div class="product-info">
-									<h1>Header</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo laboriosam sit similique eaque dolore, praesentium rem, iste voluptas illum iure veniam. Cupiditate, nulla sint rerum, voluptates necessitatibus enim explicabo?</p>
-								</div>
-							</li>
-							<li>
-								<a href="#"><img src="http://placekitten.com/g/350/350" alt="" /></a>
-								<div class="product-info">
-									<h1>Header</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo laboriosam sit similique eaque dolore, praesentium rem, iste voluptas illum iure veniam. Cupiditate, nulla sint rerum, voluptates necessitatibus enim explicabo?</p>
-								</div>
-							</li>
-							<li>
-								<a href="#"><img src="http://placekitten.com/g/350/350" alt="" /></a>
-								<div class="product-info">
-									<h1>Header</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo laboriosam sit similique eaque dolore, praesentium rem, iste voluptas illum iure veniam. Cupiditate, nulla sint rerum, voluptates necessitatibus enim explicabo?</p>
+									<a href="#"><img src="img/happyface.png" alt="" />
+										<h1 class="section-header">Pest Free</h1>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo laboriosam sit similique eaque dolore, praesentium rem, iste voluptas illum iure veniam. Cupiditate, nulla sint rerum, voluptates necessitatibus enim explicabo?</p>
+									</a>
 								</div>
 							</li>
 						</ul>
 					</section><!--products-->
 
-					<footer>
+					<footer class="contain">
 						<div class="row clearfix">
 							<div class="column third">
 								<h1>Site Map</h1>
 								<ul class="sitemap">
-									<li>link 1</li>
-									<li>link 2</li>
-									<li>link 3</li>
-									<li>link 4</li>
+									<li><a href="#">link 1</a></li>
+									<li><a href="#">link 1</a></li>
+									<li><a href="#">link 1</a></li>
 								</ul>
 							</div>
 
@@ -93,8 +94,10 @@
 
 							<div class="column third">
 								<h1>Contact</h1>
-								<a href="#"><img src="#imageofmap" alt="" /></a>
-								<h2><a href="#">Email Us Button</a></h2>
+								<div class="btn-holder">
+									<a href="#" class="btn">Email Us</a>
+								</div>
+								
 							</div>
 						</div>
 					</footer>
@@ -103,16 +106,13 @@
 				<nav class="menu">
 	 				<ul>
 	 					<li>
-	 						<a href="#">item 1</a>
+	 						<a href="#">Services</a>
 	 					</li>
 	 					<li>
-	 						<a href="#">item 1</a>
+	 						<a href="#">About</a>
 	 					</li>
 	 					<li>
-	 						<a href="#">item 1</a>
-	 					</li>
-	 					<li>
-	 						<a href="#">item 1</a>
+	 						<a href="#">Contact</a>
 	 					</li>
 	 				</ul>
 	 			</nav>
